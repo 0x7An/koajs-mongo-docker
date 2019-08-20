@@ -8,19 +8,35 @@
     "node": ">=11.8.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node -r esm index.js",
+    "dev": "nodemon -r esm index.js",
+    "clean": "rm -rf node_modules"
   },
   "author": "Anderson <andersondsl@gmail.com>",
   "dependencies": {
+    "@koa/cors": "^3.0.0",
     "axios": "^0.19.0",
+    "bristol": "^0.4.0",
     "dotenv": "^8.1.0",
+    "esm": "^3.2.25",
     "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-respond": "^2.1.0",
     "koa-router": "^7.4.0",
     "morgan": "^1.9.1",
-    "swagger-ui-express": "^4.0.7"
+    "palin": "^2.3.0",
+    "swagger-ui-express": "^4.0.7",
+    "yenv": "^2.1.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "babel-eslint": "^10.0.1",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.15.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   }
 }
