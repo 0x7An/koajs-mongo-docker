@@ -1,15 +1,29 @@
 version: '3.6'
 
 services:
+  mongo:
+    image: mongo:4.2.0
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - custom_network
   app:
     tty: true
     build: .
-    command: 
-      - "yarn"
-      - "dev"
+    command: bash -c "npm install && npm run dev"
+    working_dir: /workspace
     volumes:
-      - "./src:/app/src"
+      - ".:/workspace"
     environment:
       NODE_ENV: development
     ports:
-      - "7000:7000"
+      - "3000:3000"
+    depends_on:
+      - mongo
+    networks:
+      - custom_network
+
+networks:
+    custom_network:
