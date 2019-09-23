@@ -47,4 +47,4 @@ An opinionated boilerplate for Node web APIs focused on separation of concerns a
 
 ## Contributing
 
-This boilerplate is open to suggestions and contributions, documentation contributions are also important! :)
+This boilerplate is open to suggestions and contributions, documentation contributions are also important!

@@ -1,6 +1,6 @@
-import { createServer } from './src/app/application'
-import { logger } from './src/infra/logger'
-import { env } from './src/infra/env'
+import { createServer } from './app/application'
+import { logger } from './infra/logger'
+import { env } from './infra/env'
 
 createServer().then(
   app =>
