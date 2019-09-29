@@ -1,3 +1,10 @@
+/**
+ * Users repository.
+ * This module handle all requests with the Users Collection in mongo databases.
+ * 
+ * @module usersRepository
+ */
+
 import mongoose from 'mongoose'
 import { logger } from '../../infra/logger'
 const User = mongoose.model('User')

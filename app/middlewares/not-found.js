@@ -1,4 +1,11 @@
 /**
+ * Error-handler middlware file
+ * This middleware is reponsible to take action in any failed request in our server.
+ * 
+ * @module errorHandler
+ */
+
+/**
  * Let the user know nothing was found here.
  */
 export async function notFoundHandler(ctx) {

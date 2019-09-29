@@ -1,3 +1,10 @@
+ /**
+ * notFoundHandler middlware file
+ * This middleware is reponsible to take action in any not found request in our server.
+ * 
+ * @module notFoundHandler
+ */
+
 import { logger } from '../../infra/logger'
 import { env } from '../../infra/env'
 

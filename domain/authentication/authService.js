@@ -1,3 +1,10 @@
+/**
+ * authentication service.
+ * This file handles all the business logic of authentications.
+ * 
+ * @module AuthenticationService
+ */
+
 import { Service } from '../core/service'
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'

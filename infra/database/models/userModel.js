@@ -1,3 +1,10 @@
+/**
+ * User Schema
+ * This file describes the User Model
+ * 
+ * @module UserSchema
+ */
+
 import mongoose from 'mongoose';
 
 const UserSchema = new mongoose.Schema({

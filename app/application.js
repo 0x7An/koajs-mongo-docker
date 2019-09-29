@@ -1,3 +1,10 @@
+/**
+ * Application file
+ * This is the application file, where we return an koajs server with middlewares.
+ * 
+ * @module Application
+ */
+
 import mongoose from '../infra/database/mongoose'
 import * as http from 'http'
 import Koa from 'koa'

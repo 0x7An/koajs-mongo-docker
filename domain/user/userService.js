@@ -1,3 +1,10 @@
+/**
+ * User service.
+ * This file handles all the business logic of users.
+ * 
+ * @module UserService
+ */
+
 import { usersRepository } from './userRepository'
 import { authService } from '../authentication/authService'
 import { Service } from '../core/service'
